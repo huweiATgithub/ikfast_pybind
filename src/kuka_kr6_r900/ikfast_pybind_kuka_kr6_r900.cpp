@@ -7,7 +7,7 @@
 #define IKFAST_HAS_LIBRARY
 #endif
 
-#include <kuka_kr6_r900/ikfast.h>
+#include "ikfast.h"
 
 #ifdef IKFAST_NAMESPACE
 using namespace IKFAST_NAMESPACE;

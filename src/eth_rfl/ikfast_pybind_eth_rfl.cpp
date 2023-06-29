@@ -7,7 +7,7 @@
 #define IKFAST_HAS_LIBRARY
 #endif
 
-#include <eth_rfl/ikfast.h>
+#include "ikfast.h"
 
 #ifdef IKFAST_NAMESPACE
 using namespace IKFAST_NAMESPACE;

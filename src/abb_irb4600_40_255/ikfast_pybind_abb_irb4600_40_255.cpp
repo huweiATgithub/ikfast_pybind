@@ -7,7 +7,7 @@
 #define IKFAST_HAS_LIBRARY
 #endif
 
-#include <abb_irb4600_40_255/ikfast.h>
+#include "ikfast.h"
 
 #ifdef IKFAST_NAMESPACE
 using namespace IKFAST_NAMESPACE;
