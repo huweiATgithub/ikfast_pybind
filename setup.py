@@ -37,7 +37,7 @@ EXT_MODULES = [
                ]
 
 setup(
-    name='ikfast_pybind',
+    name='ikfast_pybind_tmp',
     version='0.1.2',
     license='MIT License',
     description='ikfast_pybind is a python binding generation library for the analytic kinematics engine ikfast.',
