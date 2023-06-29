@@ -12,6 +12,7 @@ add_subdirectory(ur5e)
 add_subdirectory(eth_rfl)
 add_subdirectory(franka_panda)
 add_subdirectory(kawasaki_rs010n)
+add_subdirectory(kuka_iiwa)
 
 # keep adding folders here...
 # add_subdirectory(abb_4600_xxx)

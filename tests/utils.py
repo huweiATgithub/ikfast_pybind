@@ -1,7 +1,11 @@
 import numpy as np
 
 def best_sol(sols, q_guess, weights, feasible_ranges):
-    """get the best solution based on UR's joint domain value and weighted joint diff
+    """
+    This function is used to convert joint angles to the feasible ranges in a way angles are closer to the guessed value
+    (by adding or subtracting 2*pi).
+
+    get the best solution based on UR's joint domain value and weighted joint diff
     modified from :
     https://github.com/ros-industrial/universal_robot/blob/kinetic-devel/ur_kinematics/src/ur_kinematics/test_analytical_ik.py
 
@@ -26,6 +30,10 @@ def best_sol(sols, q_guess, weights, feasible_ranges):
 
 
 def check_q(fk_fn, ik_fn, q, feasible_ranges, free_joint_ids=[], diff_tol=1e-3):
+    """
+    given a configuration q:
+    this function checks if the ik_fn is able to find a solution that is close to the given configuration q.
+    """
     pos, rot = fk_fn(q)
     if free_joint_ids:
         sols = ik_fn(pos, rot, [q[i] for i in free_joint_ids])

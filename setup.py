@@ -33,11 +33,12 @@ EXT_MODULES = [
                CMakeExtension('ikfast_ur5'),
                CMakeExtension('ikfast_ur5e'),
                CMakeExtension('ikfast_ur3'),
+               CMakeExtension('kuka_iiwa'),
                ]
 
 setup(
     name='ikfast_pybind',
-    version='0.1.1',
+    version='0.1.2',
     license='MIT License',
     description='ikfast_pybind is a python binding generation library for the analytic kinematics engine ikfast.',
     author='Yijiang Huang',
@@ -67,6 +68,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     keywords=['Robotics', 'kinematics'],
     install_requires=requirements,
